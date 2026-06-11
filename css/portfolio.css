@@ -174,8 +174,8 @@ code {
     font-size: 14px;
 }
 
-/* Call-to-action link used to open the signup form in a new tab */
-.cta-link {
+/* Signup link used to open the signup form in a new tab */
+.signup-link {
     display: inline-block;
     background-color: olivedrab;
     color: white;
@@ -185,11 +185,11 @@ code {
     border: 1px solid #4d7a10;
 }
 
-.cta-link:hover {
+.signup-link:hover {
     background-color: darkgreen;
 }
 
-/* Newsletter signup form styling - pure CSS, no inline styles in the HTML */
+/* Newsletter signup form styling */
 form#signupForm {
     max-width: 600px;
     background-color: #f7f4e1;
@@ -203,19 +203,13 @@ form#signupForm label {
 }
 
 /* Text-style inputs and the textarea get a consistent look */
-form#signupForm input[type="text"],
-form#signupForm input[type="email"],
+form#signupForm input,
 form#signupForm textarea {
     padding: 6px 8px;
     border: 1px solid #8a8a4a;
     font-family: Arial, Helvetica, Geneva, sans-serif;
     font-size: 14px;
     margin-top: 4px;
-}
-
-form#signupForm textarea {
-    /* Stops users dragging the textarea outside the form box */
-    resize: vertical;
 }
 
 /* Group the radio button and checkbox sets visually */
@@ -233,8 +227,7 @@ form#signupForm legend {
 }
 
 /* Submit and Reset buttons */
-.form-buttons input[type="submit"],
-.form-buttons input[type="reset"] {
+.form-buttons input {
     background-color: olivedrab;
     color: white;
     border: 1px solid #4d7a10;
@@ -245,8 +238,7 @@ form#signupForm legend {
     cursor: pointer;
 }
 
-.form-buttons input[type="submit"]:hover,
-.form-buttons input[type="reset"]:hover {
+.form-buttons input:hover {
     background-color: darkgreen;
 }
 
@@ -302,7 +294,7 @@ form#signupForm legend {
     }
 
     form#signupForm legend,
-    .cta-link {
+    .signup-link {
         color: black;
         background-color: white;
         border: 1px solid black;
